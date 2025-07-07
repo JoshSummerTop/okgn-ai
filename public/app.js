@@ -21694,7 +21694,7 @@ console.log("Widget script loaded");
 const API_BASE = "https://rails-830y.onrender.com/api/v1";
 const ASSISTANT_ID = "20";
 const API_TOKEN = "nLLLBW8LCj7Z6Gk4jbusddpt";
-const WEBSOCKET_URL_BASE = "wss://rails-830y.onrender.com/cable?token=nLLLBW8LCj7Z6Gk4jbusddpt";
+const WEBSOCKET_URL_BASE = "wss://okgn-ai.onrender.com/cable";
 const appStyles = css`
   display: flex;
   flex-direction: row;
