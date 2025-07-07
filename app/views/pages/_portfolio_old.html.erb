@@ -1,0 +1,40 @@
+<section id="portfolio" class="py-20 bg-gray-50">
+  <div class="container max-w-7xl mx-auto px-4">
+    <div class="text-center space-y-4 mb-16">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Our Portfolio</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Discover how we've helped businesses across industries transform their customer experience with intelligent chatbots.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Portfolio Item 1 -->
+      <div class="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden rounded-lg bg-white">
+        <div class="relative overflow-hidden">
+          <%= image_tag "placeholder.svg", alt: "E-commerce Support Bot", class: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" %>
+          <div class="absolute top-4 right-4">
+            <a href="#" class="opacity-0 group-hover:opacity-100 transition-opacity bg-gray-100 p-2 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg></a>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-1.5 p-6">
+          <div class="text-lg font-semibold">E-commerce Support Bot</div>
+          <div class="text-sm text-gray-500">24/7 customer service automation for online retailers with order tracking and product recommendations.</div>
+        </div>
+        <div class="p-6 pt-0 space-y-4">
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-700">E-commerce</span>
+            <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-700">Customer Support</span>
+            <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-700">Order Management</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm text-[#044a59] font-medium">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27" /></svg>
+            <span>85% reduction in support tickets</span>
+          </div>
+        </div>
+      </div>
+      <!-- Add more portfolio items as needed, following the above structure -->
+    </div>
+    <div class="text-center mt-12">
+      <a href="#portfolio" class="bg-[#044a59] hover:bg-[#0aa689] text-white px-8 py-3 rounded-md font-semibold inline-block">View All Projects <span class="inline-block ml-2 align-middle">→</span></a>
+    </div>
+  </div>
+</section> 

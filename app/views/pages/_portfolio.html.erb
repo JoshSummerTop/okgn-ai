@@ -1,0 +1,57 @@
+<section id="portfolio" class="py-20 bg-gray-50 min-h-screen flex flex-col">
+  <div class="container max-w-7xl mx-auto px-4 flex-1 flex flex-col">
+    <div class="text-center space-y-4 mb-16">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Our Portfolio</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Discover how we've helped businesses across industries transform their customer experience with intelligent chatbots.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 flex-1 items-stretch">
+      <!-- Portfolio Item 1 -->
+      <div class="group cursor-pointer hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden rounded-lg bg-white flex flex-col flex-1">
+        <div class="relative overflow-hidden">
+          <button data-controller="chat-widget-launcher" data-action="chat-widget-launcher#openChatWidget" class="w-full h-48 block focus:outline-none cursor-pointer">
+            <%= image_tag "okgn-ai.gif", alt: "E-commerce Support Bot", class: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 pointer-events-none" %>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-1.5 p-6 flex-1">
+          <div class="text-lg font-semibold">Custom Chatbots</div>
+          <div class="text-sm text-gray-500">Our AI-powered chatbots go beyond simple Q&A by searching your company's private knowledgebase using advanced vector technology for accurate, context-aware answers. You can also extend its capabilities with custom tools, such as real-time web search, to provide up-to-date information and tailored support for your team.</div>
+        </div>
+        <div class="p-6 pt-0 space-y-4 flex items-end">
+          <button data-controller="chat-widget-launcher" data-action="chat-widget-launcher#openChatWidget" class="cursor-pointer bg-[#044a59] hover:bg-[#0aa689] text-white px-4 py-2 rounded-md font-medium transition-colors">Try Demo</button>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden rounded-lg bg-white flex flex-col flex-1">
+        <div class="relative overflow-hidden">
+          <a href="https://freeman-4h1q.onrender.com/" target="_blank" rel="noopener">
+            <%= image_tag "second_unit.gif", alt: "AI-Assisted Talent Search", class: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" %>
+          </a>
+        </div>
+        <div class="flex flex-col space-y-1.5 p-6 flex-1">
+          <div class="text-lg font-semibold">AI-Assisted Talent Search</div>
+          <div class="text-sm text-gray-500">Our AI-assisted search enhances talent discovery by interpreting natural language queries and mapping them to relevant filters. For example, you can search for "lives in Vancouver", "actors with red hair", "short male gendered", or "with background experience". The AI augments your search by analyzing context and extracting key details for accurate, tailored results, all without manual filtering.</div>
+        </div>
+        <div class="p-6 pt-0 space-y-4 flex items-end">
+          <a href="https://freeman-4h1q.onrender.com/" target="_blank" rel="noopener" class="cursor-pointer bg-[#044a59] hover:bg-[#0aa689] text-white px-4 py-2 rounded-md font-medium transition-colors">Try Demo</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden rounded-lg bg-white flex flex-col flex-1">
+        <div class="relative overflow-hidden">
+          <a href="https://canada-calendar.onrender.com/" target="_blank" rel="noopener">
+            <%= image_tag "canada_calendar.gif", alt: "AI-Assisted Event Discovery", class: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" %>
+          </a>
+        </div>
+        <div class="flex flex-col space-y-1.5 p-6 flex-1">
+          <div class="text-lg font-semibold">AI-Assisted Event Discovery</div>
+          <div class="text-sm text-gray-500">Canada Calendar uses AI to make event searching simple and smart. Just type a query like "find music in Vancouver" or "show concerts this week." The AI parses your request, extracting event types, locations, and dates using natural language processing, then instantly applies these as search filters to deliver relevant results.</div>
+        </div>
+        <div class="p-6 pt-0 space-y-4 flex items-end">
+          <a href="https://canada-calendar.onrender.com/" target="_blank" rel="noopener" class="cursor-pointer bg-[#044a59] hover:bg-[#0aa689] text-white px-4 py-2 rounded-md font-medium transition-colors">Try Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 

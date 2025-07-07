@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title><%= content_for(:title) || "OKGN AI" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js"></script>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <main class="w-full flex flex-col">
+      <%= yield %>
+    </main>
+    <button data-controller="chat-widget-launcher" data-action="chat-widget-launcher#openChatWidget" style="position: fixed; bottom: 32px; right: 32px; z-index: 9; background: white; border: none; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.15); width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+      <img src="<%= asset_path('logo-mark.png') %>" alt="Open Chat" style="width: 40px; height: 40px;" />
+    </button>
+  </body>
+</html>

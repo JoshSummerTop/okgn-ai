@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-overlay .chat-message {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f2937; /* Tailwind's gray-800 */
+}
+
+.chat-overlay .chat-message p {
+  margin: 1rem 0;
+}
+
+.chat-overlay .chat-message ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.chat-overlay .chat-message li {
+  padding-bottom: 0.75rem;
+}
+
+.chat-overlay .chat-message li:last-child {
+  padding-bottom: 0;
+}
+
+.chat-overlay .chat-message li p {
+  margin: 0;
+}
+
+.chat-overlay .chat-message strong {
+  font-weight: 600;
+  color: #111827; /* Tailwind's gray-900 */
+}
+
+.chat-overlay .chat-message > *:first-child {
+  margin-top: 0;
+}
+
+.chat-overlay .chat-message > *:last-child {
+  margin-bottom: 0;
+}
+
